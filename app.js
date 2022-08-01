@@ -23,11 +23,7 @@ let spaceship = {
 
 // Write a function with 2 parameters 
 function verifyInfo(obj, item) {
-    if(obj.hasOwnProperty(item)) {
-        return ("item is available.")
-    } else {
-        return ("Item is not available")
-    }
+    return obj.hasOwnProperty(item)
 }
 
 console.log(verifyInfo(spaceship, "captain"));
